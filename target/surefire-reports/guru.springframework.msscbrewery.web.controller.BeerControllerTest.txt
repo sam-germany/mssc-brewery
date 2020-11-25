@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: guru.springframework.msscbrewery.web.controller.BeerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.02 s <<< FAILURE! - in guru.springframework.msscbrewery.web.controller.BeerControllerTest
+getBeer  Time elapsed: 0.015 s  <<< ERROR!
+java.lang.NullPointerException
+	at guru.springframework.msscbrewery.web.controller.BeerControllerTest.getBeer(BeerControllerTest.java:55)
+
