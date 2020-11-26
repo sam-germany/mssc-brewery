@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Positive;
+import java.time.OffsetDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -30,6 +31,18 @@ public class BeerDto {
     @Positive
     private Long upc;
 
+    private OffsetDateTime createdDate;
 
-
+    private OffsetDateTime lastUpdated;
 }
+
+/*
+https://www.dariawan.com/tutorials/java/java-offsetdatetime-tutorial-examples/
+
+https://www.logicbig.com/how-to/code-snippets/jcode-java-8-date-time-api-offsetdatetime-format.html
+
+main point is that  OffsetDateTime we will get the zone time
+
+ */
+
+
