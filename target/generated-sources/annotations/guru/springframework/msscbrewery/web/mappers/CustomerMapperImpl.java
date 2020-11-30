@@ -2,12 +2,13 @@ package guru.springframework.msscbrewery.web.mappers;
 
 import guru.springframework.msscbrewery.domain.Customer;
 import guru.springframework.msscbrewery.web.model.CustomerDto;
+import guru.springframework.msscbrewery.web.model.CustomerDto.CustomerDtoBuilder;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-11-26T09:04:12+0100",
+    date = "2020-11-28T20:18:01+0100",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 14.0.2 (Oracle Corporation)"
 )
 @Component
@@ -30,8 +31,8 @@ public class CustomerMapperImpl implements CustomerMapper {
             return null;
         }
 
-        CustomerDto customerDto = new CustomerDto();
+        CustomerDtoBuilder customerDto = CustomerDto.builder();
 
-        return customerDto;
+        return customerDto.build();
     }
 }
